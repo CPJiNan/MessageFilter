@@ -1,0 +1,23 @@
+# 全局设置
+options:
+  # bStats数据统计
+  metrics: true
+# 模块设置
+module:
+  # 聊天过滤器模块
+  filter:
+    # 启用聊天过滤器
+    enable: true
+    # 过滤规则
+    rule:
+      # 取消事件
+      setCancelled: false
+      # 匹配规则
+      # 支持正则表达式
+      key:
+        - "(违禁词1|违禁词2)"
+      # 替换规则
+      replace: "*"
+    # 执行Kether动作
+    action:
+      - "tell §c§l请文明用语，规范聊天！"
